@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GosignupActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="right">
+
+        <Button
+            android:id="@+id/go_home"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/ic_action_homego"/>
+    </LinearLayout>
+        <Spinner
+            android:id="@+id/spinner_select"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="26dp"
+            android:text="\t성\t명"
+            android:textSize="23dp" />
+
+        <EditText
+            android:id="@+id/name0_btn"
+            android:layout_width="100dp"
+            android:layout_weight="3"
+            android:layout_marginRight="70dp"
+            android:layout_height="30dp"
+            android:background="@null"
+            android:hint="성명을 입력해주세요"
+            android:layout_marginTop="20dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="300dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:text="기타\n\n사항"
+            android:textSize="23dp" />
+
+        <EditText
+            android:id="@+id/memo0_btn"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="70dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="3"
+            android:hint="\n\n\n상담내용을 입력해주세요"
+            android:background="@null" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="\t번\t호"
+            android:layout_marginTop="6dp"
+            android:textSize="23dp" />
+
+        <EditText
+            android:id="@+id/phone0_btn"
+            android:layout_width="100dp"
+            android:layout_weight="3"
+            android:layout_marginRight="70dp"
+            android:layout_height="30dp"
+            android:background="@null"
+            android:hint="번호를입력해주세요"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+
+        <Button
+            android:id="@+id/email0_btn"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="상담신청하기"
+            android:layout_marginLeft="10dp"/>
+
+        <Button
+            android:id="@+id/reset0_btn"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="다시작성"/>
+    </LinearLayout>
+</LinearLayout>
